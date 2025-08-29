@@ -3,14 +3,14 @@ import { Activity, Cpu, Heart, School, ShieldPlus } from "lucide-react";
 const FeaturesSection = () => {
   return (
     <>
-      <section className="w-full min-h-screen  py-8">
-        <div className="w-full h-max flex flex-col justify-center items-center  px-6 md:px-30 lg:px-60">
+      <section className="w-full min-h-screen  py-8" id="about">
+        <div className="w-full h-max flex flex-col justify-center items-center  px-6 lg:px-60">
           <h3 className="text-slate-400 font-semibold text-lg">Introduction</h3>
           <h1 className="text-slate-700 font-bold text-4xl text-center">
             A commitment to healthier, <br /> brighter smiles
           </h1>
         </div>
-        <div className="flex flex-wrap flex-col md:flex-row  px-6 md:px-30 lg:px-60 py-16 gap-2 gap-y-16 justify-between">
+        <div className="flex flex-wrap flex-col md:flex-row  px-6 px-6 lg:px-60 py-16 gap-2 gap-y-16 justify-between">
           <div className="w-full md:max-w-[45%] lg:max-w-[30%] flex flex-col gap-4">
             <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex justify-center items-center">
               <Activity className="text-blue-500" />

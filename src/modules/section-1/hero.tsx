@@ -26,11 +26,16 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex gap-3">
-              <Button size="lg" className="bg-blue-500 hover:bg-blue-500/80">
+              {/* <Button size="lg" className="bg-blue-500 hover:bg-blue-500/80">
                 Book Now
-              </Button>
-              <Button size="lg" variant="ghost">
-                Contact us
+              </Button> */}
+              <Button
+                size="lg"
+                variant="ghost"
+                className="bg-blue-500 hover:bg-blue-500/80 text-white"
+                asChild
+              >
+                <a href="#contact">Contact us</a>
               </Button>
             </div>
           </div>

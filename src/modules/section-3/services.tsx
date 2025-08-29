@@ -3,15 +3,15 @@ import { Star } from "lucide-react";
 const ServicesSection = () => {
   return (
     <>
-      <section className="w-full min-h-screen h-max py-8">
-        <div className="w-full h-max flex flex-col justify-center items-center  px-6 md:px-30 lg:px-60">
+      <section className="w-full min-h-screen h-max py-8" id="services">
+        <div className="w-full h-max flex flex-col justify-center items-center  px-6 px-6 lg:px-60">
           <h3 className="text-slate-400 font-semibold text-lg">Services</h3>
           <h1 className="text-slate-700 font-bold text-4xl text-center">
             Personalized solutions for <br /> better oral health
           </h1>
         </div>
 
-        <div className="flex flex-wrap justify-between px-6 md:px-30 lg:px-60 gap-6 py-10">
+        <div className="flex flex-wrap justify-between px-6 px-6 lg:px-60 gap-6 py-10">
           <div className="flex-1 flex-col min-w-full md:min-w-[33.33%]">
             <img
               className="w-full aspect-video rounded-md object-cover"

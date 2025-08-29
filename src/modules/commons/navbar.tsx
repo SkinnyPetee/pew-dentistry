@@ -7,7 +7,7 @@ import NavLinks from "./nav-links";
 const Navbar = () => {
   return (
     <>
-      <header className="bg-white/30 backdrop-blur-md w-full  px-6 md:px-30 lg:px-60  flex justify-between items-center h-[80px] fixed top-0 z-20">
+      <header className="bg-white/30 backdrop-blur-md w-full  px-6  lg:px-60  flex justify-between items-center h-[80px] fixed top-0 z-20">
         <div>
           <Logo />
         </div>

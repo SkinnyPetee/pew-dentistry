@@ -4,10 +4,10 @@ const SectionVideo = () => {
   return (
     <>
       <section className="w-full min-h-screen  py-8">
-        <div className="w-full px-6 md:px-30 lg:px-60 h-full">
+        <div className="w-full px-6 px-6 lg:px-60 h-full">
           <CustomVideoPlayer />
         </div>
-        <div className="flex gap-8 px-6 md:px-30 lg:px-60 my-16 justify-between flex-wrap lg:flex-nowrap">
+        <div className="flex gap-8 px-6 px-6 lg:px-60 my-16 justify-between flex-wrap lg:flex-nowrap">
           <div className="flex flex-col gap-2">
             <p className="text-5xl font-bold text-slate-700">150+</p>
             <h3 className="text-xl font-semibold text-slate-400">

@@ -3,6 +3,10 @@ import Hero from "@/modules/section-1/hero";
 import FeaturesSection from "@/modules/section-2/features";
 import ServicesSection from "@/modules/section-3/services";
 import SectionVideo from "@/modules/section-video";
+import HowItWorksSection from "@/modules/section-4/how-it-works";
+import TestimonialSection from "@/modules/section-5/testimonial";
+import Contact from "@/modules/section-6/contact";
+import Footer from "@/modules/footer";
 
 export default function Home() {
   return (
@@ -13,7 +17,11 @@ export default function Home() {
         <FeaturesSection />
         <SectionVideo />
         <ServicesSection />
+        <HowItWorksSection />
+        <TestimonialSection />
+        <Contact />
       </main>
+      <Footer />
     </>
   );
 }
