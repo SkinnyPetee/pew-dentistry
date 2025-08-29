@@ -42,7 +42,7 @@ const HowItWorksSection = () => {
         <div className="px-6 px-6 lg:px-60 w-full h-max py-16 flex gap-16 flex-col md:flex-row">
           <div className="flex flex-col gap-3 justify-center">
             <div className="flex gap-6 items-center">
-              <div className="w-[45px] h-[45px] flex justify-center items-center bg-blue-500 rounded-full text-lg text-white font-bold">
+              <div className="min-w-[45px] min-h-[45px] flex justify-center items-center bg-blue-500 rounded-full text-lg text-white font-bold">
                 02
               </div>
               <h2 className="text-shadow-slate-700 font-semibold text-3xl">
