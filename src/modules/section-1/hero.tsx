@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <>
       <Centerer>
-        <section className="w-full h-max min-h-[calc(100svh-80px)] flex flex-col lg:flex-row gap-y-10">
-          <div className="flex-1  flex flex-col justify-center items-start gap-4 py-10 md:py-0">
+        <section className="w-full min-h-screen flex flex-col lg:flex-row gap-y-10 py">
+          <div className="flex-1 flex flex-col justify-center items-start gap-4 py-34 pr-8">
             <div>
               <p className="text-slate-400 text-lg font-semibold">
                 Healthy smiles, happy lives.
@@ -34,7 +34,7 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="h-max flex-1  py-16">
+          <div className="min-h-full flex-1  py-0 md:py-34 flex justify-center">
             <div className="relative rounded-2xl overflow-hidden w-full aspect-square">
               <Image
                 src="/images/image-1.avif"
