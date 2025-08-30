@@ -1,9 +1,9 @@
 const TestimonialSection = () => {
   return (
     <>
-      <section className="w-full min-h-screen  py-8">
+      <section className="w-full min-h-screen  py-8" id="testimonial">
         <div className="w-full h-max flex flex-col justify-center items-center  px-6 lg:px-60">
-          <h3 className="text-slate-400 font-semibold text-lg">Testimonial</h3>
+          <h3 className="text-[#d3b44e] font-semibold text-lg">Testimonial</h3>
           <h1 className="text-slate-700 font-bold text-4xl text-center">
             What our patients say about <br /> us & service!!
           </h1>

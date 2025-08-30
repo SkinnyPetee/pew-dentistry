@@ -10,7 +10,8 @@ const Hero = () => {
           <div className="flex-1 flex flex-col justify-center items-start gap-4 py-34 pr-8">
             <div>
               <p className="text-slate-400 text-lg font-semibold">
-                Healthy smiles, happy lives.
+                <span className="text-[#d3b44e]">Healthy</span> smiles,{" "}
+                <span className="text-[#d3b44e]">happy</span> lives.
               </p>
             </div>
             <div>

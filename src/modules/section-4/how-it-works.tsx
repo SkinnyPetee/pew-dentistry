@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 const HowItWorksSection = () => {
   return (
     <>
-      <section className="w-full min-h-screen  py-8">
+      <section className="w-full min-h-screen  py-8" id="how-it-works">
         <div className="w-full h-max flex flex-col justify-center items-center  px-6 px-6 lg:px-60">
-          <h3 className="text-slate-400 font-semibold text-lg">How it works</h3>
+          <h3 className="text-[#d3b44e] font-semibold text-lg">How it works</h3>
           <h1 className="text-slate-700 font-bold text-4xl text-center">
             The process of achieving <br /> dental excellence
           </h1>

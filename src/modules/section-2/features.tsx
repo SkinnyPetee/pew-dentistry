@@ -5,7 +5,7 @@ const FeaturesSection = () => {
     <>
       <section className="w-full min-h-screen  py-8" id="about">
         <div className="w-full h-max flex flex-col justify-center items-center  px-6 lg:px-60">
-          <h3 className="text-slate-400 font-semibold text-lg">Introduction</h3>
+          <h3 className="text-[#d3b44e] font-semibold text-lg">Introduction</h3>
           <h1 className="text-slate-700 font-bold text-4xl text-center">
             A commitment to healthier, <br /> brighter smiles
           </h1>

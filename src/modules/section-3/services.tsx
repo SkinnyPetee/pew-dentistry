@@ -4,8 +4,8 @@ const ServicesSection = () => {
   return (
     <>
       <section className="w-full min-h-screen h-max py-8" id="services">
-        <div className="w-full h-max flex flex-col justify-center items-center  px-6 px-6 lg:px-60">
-          <h3 className="text-slate-400 font-semibold text-lg">Services</h3>
+        <div className="w-full h-max flex flex-col justify-center items-center  px-6 lg:px-60">
+          <h3 className="text-[#d3b44e] font-semibold text-lg">Services</h3>
           <h1 className="text-slate-700 font-bold text-4xl text-center">
             Personalized solutions for <br /> better oral health
           </h1>
