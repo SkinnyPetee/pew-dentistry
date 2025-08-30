@@ -18,7 +18,7 @@ const HowItWorksSection = () => {
           />
           <div className="flex flex-col gap-3 justify-center">
             <div className="flex gap-6 items-center">
-              <div className="w-[45px] h-[45px] flex justify-center items-center bg-blue-500 rounded-full text-lg text-white font-bold">
+              <div className="w-[45px] h-[45px] flex justify-center items-center bg-teal-500 rounded-full text-lg text-white font-bold">
                 01
               </div>
               <h2 className="text-shadow-slate-700 font-semibold text-3xl">
@@ -32,7 +32,7 @@ const HowItWorksSection = () => {
             </p>
             <Button
               size="lg"
-              className="font-bold max-w-max bg-blue-500 hover:bg-blue-500/80 text-white"
+              className="font-bold max-w-max bg-teal-500 hover:bg-teal-500/80 text-white"
               asChild
             >
               <a href="#contact">Contact Us</a>
@@ -42,7 +42,7 @@ const HowItWorksSection = () => {
         <div className="px-6 px-6 lg:px-60 w-full h-max py-16 flex gap-16 flex-col md:flex-row">
           <div className="flex flex-col gap-3 justify-center">
             <div className="flex gap-6 items-center">
-              <div className="min-w-[45px] min-h-[45px] flex justify-center items-center bg-blue-500 rounded-full text-lg text-white font-bold">
+              <div className="min-w-[45px] min-h-[45px] flex justify-center items-center bg-teal-500 rounded-full text-lg text-white font-bold">
                 02
               </div>
               <h2 className="text-shadow-slate-700 font-semibold text-3xl">
@@ -55,7 +55,7 @@ const HowItWorksSection = () => {
             </p>
             <Button
               size="lg"
-              className="bg-blue-500 hover:bg-blue-500/80 text-white font-bold max-w-max"
+              className="bg-teal-500 hover:bg-teal-500/80 text-white font-bold max-w-max"
               asChild
             >
               <a href="#contact">Contact Us</a>
@@ -75,7 +75,7 @@ const HowItWorksSection = () => {
           />
           <div className="flex flex-col gap-3 justify-center">
             <div className="flex gap-6 items-center">
-              <div className="w-[45px] h-[45px] flex justify-center items-center bg-blue-500 rounded-full text-lg text-white font-bold">
+              <div className="w-[45px] h-[45px] flex justify-center items-center bg-teal-500 rounded-full text-lg text-white font-bold">
                 03
               </div>
               <h2 className="text-shadow-slate-700 font-semibold text-3xl">
@@ -88,7 +88,7 @@ const HowItWorksSection = () => {
             </p>
             <Button
               size="lg"
-              className="bg-blue-500 hover:bg-blue-500/80 text-white font-bold max-w-max"
+              className="bg-teal-500 hover:bg-teal-500/80 text-white font-bold max-w-max"
               asChild
             >
               <a href="#contact"> Contact Us</a>

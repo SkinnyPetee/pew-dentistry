@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="border-t bg-blue-500"
+        className="border-t bg-teal-500"
         role="contentinfo"
         aria-label="Footer"
       >

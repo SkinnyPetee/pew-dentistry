@@ -12,8 +12,8 @@ const FeaturesSection = () => {
         </div>
         <div className="flex flex-wrap flex-col md:flex-row  px-6 px-6 lg:px-60 py-16 gap-2 gap-y-16 justify-between">
           <div className="w-full md:max-w-[45%] lg:max-w-[30%] flex flex-col gap-4">
-            <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex justify-center items-center">
-              <Activity className="text-blue-500" />
+            <div className="w-10 h-10 rounded-lg bg-teal-500/10 flex justify-center items-center">
+              <Activity className="text-teal-500" />
             </div>
             <div className="w-full gap-2 flex flex-col">
               <h1 className="text-2xl font-semibold text-slate-700">
@@ -26,8 +26,8 @@ const FeaturesSection = () => {
             </div>
           </div>
           <div className="w-full md:max-w-[45%] lg:max-w-[30%] flex flex-col gap-4">
-            <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex justify-center items-center">
-              <Activity className="text-blue-500" />
+            <div className="w-10 h-10 rounded-lg bg-teal-500/10 flex justify-center items-center">
+              <Activity className="text-teal-500" />
             </div>
             <div className="w-full gap-2 flex flex-col">
               <h1 className="text-2xl font-semibold text-slate-700">
@@ -40,8 +40,8 @@ const FeaturesSection = () => {
             </div>
           </div>
           <div className="w-full md:max-w-[45%] lg:max-w-[30%] flex flex-col gap-4">
-            <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex justify-center items-center">
-              <Cpu className="text-blue-500" />
+            <div className="w-10 h-10 rounded-lg bg-teal-500/10 flex justify-center items-center">
+              <Cpu className="text-teal-500" />
             </div>
             <div className="w-full gap-2 flex flex-col">
               <h1 className="text-2xl font-semibold text-slate-700">
@@ -54,8 +54,8 @@ const FeaturesSection = () => {
             </div>
           </div>
           <div className="w-full md:max-w-[45%] lg:max-w-[30%] flex flex-col gap-4">
-            <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex justify-center items-center">
-              <School className="text-blue-500" />
+            <div className="w-10 h-10 rounded-lg bg-teal-500/10 flex justify-center items-center">
+              <School className="text-teal-500" />
             </div>
             <div className="w-full gap-2 flex flex-col">
               <h1 className="text-2xl font-semibold text-slate-700">
@@ -68,8 +68,8 @@ const FeaturesSection = () => {
             </div>
           </div>
           <div className="w-full md:max-w-[45%] lg:max-w-[30%] flex flex-col gap-4">
-            <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex justify-center items-center">
-              <ShieldPlus className="text-blue-500" />
+            <div className="w-10 h-10 rounded-lg bg-teal-500/10 flex justify-center items-center">
+              <ShieldPlus className="text-teal-500" />
             </div>
             <div className="w-full gap-2 flex flex-col">
               <h1 className="text-2xl font-semibold text-slate-700">
@@ -82,8 +82,8 @@ const FeaturesSection = () => {
             </div>
           </div>
           <div className="w-full md:max-w-[45%] lg:max-w-[30%] flex flex-col gap-4">
-            <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex justify-center items-center">
-              <Heart className="text-blue-500" />
+            <div className="w-10 h-10 rounded-lg bg-teal-500/10 flex justify-center items-center">
+              <Heart className="text-teal-500" />
             </div>
             <div className="w-full gap-2 flex flex-col">
               <h1 className="text-2xl font-semibold text-slate-700">

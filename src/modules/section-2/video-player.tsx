@@ -44,7 +44,7 @@ export default function CustomVideoPlayer() {
       {/* Custom Play Button */}
       <button
         onClick={togglePlay}
-        className="m-8 absolute bottom-4 right-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 shadow-lg"
+        className="m-8 absolute bottom-4 right-4 flex h-12 w-12 items-center justify-center rounded-full bg-teal-500 shadow-lg"
       >
         {isPlaying ? (
           <Pause className="h-6 w-6 text-white" />

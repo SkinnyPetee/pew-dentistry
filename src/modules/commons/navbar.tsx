@@ -17,7 +17,7 @@ const Navbar = () => {
         <div>
           <Button
             size="lg"
-            className="bg-blue-500 text-white font-semibold hover:bg-blue-500/80"
+            className="bg-teal-500 text-white font-semibold hover:bg-teal-500/80"
             asChild
           >
             <Link href="#contact">Contact Us</Link>

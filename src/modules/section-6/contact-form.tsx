@@ -131,7 +131,7 @@ export default function ContactForm() {
             <Button
               type="submit"
               disabled={loading}
-              className="w-full bg-blue-500 text-white hover:bg-blue-600 focus-visible:ring-blue-500"
+              className="w-full bg-teal-500 text-white hover:bg-blue-600 focus-visible:ring-blue-500"
             >
               {loading ? "Sending..." : "Submit"}
             </Button>
