@@ -152,7 +152,7 @@ export function PricingSection() {
       >
         <h3 className="text-[#d3b44e] font-semibold text-lg">Pricing</h3>
         <h1 className="text-slate-700 font-bold text-4xl text-center">
-          Simple and Affordable
+          Private Fee Guide
         </h1>
       </div>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 px-6  lg:px-60 py-16">

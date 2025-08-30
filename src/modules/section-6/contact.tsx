@@ -1,5 +1,6 @@
 import { MapPin } from "lucide-react";
 import ContactForm from "./contact-form";
+import { Button } from "../../components/ui/button";
 
 const Contact = () => {
   return (
@@ -13,10 +14,26 @@ const Contact = () => {
             Talk to us about your <br /> dental concerns
           </h2>
           <div className="flex gap-3">
-            <div className="w-10 h-10 rounded-lg bg-teal-500/10 flex justify-center items-center">
+            <div className="min-w-10 h-10 rounded-lg bg-teal-500/10 flex justify-center items-center">
               <MapPin className="text-teal-500" />
             </div>
-            <p className="text-slate-700 font-bold text-2xl">Pewsey, UK</p>
+            <p className="text-slate-600 font-medium text-md">
+              Pewsey Dental Practice, 15 North Street, Pewsey, Wiltshire, SN9
+              5ES <br /> Tel: 01672 563622 <br /> E-Mail:
+              pewseydental@btconnect.com
+              <br />
+              <Button
+                className="bg-teal-500 hover:bg-teal-500/10 text-white mt-6"
+                asChild
+              >
+                <a
+                  href="https://www.google.com/maps?ll=51.339352,-1.766213&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=7199976388193657615"
+                  target="_blank"
+                >
+                  Find Us on Google Maps
+                </a>
+              </Button>
+            </p>
           </div>
         </div>
 

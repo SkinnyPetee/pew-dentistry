@@ -5,9 +5,17 @@ const FeaturesSection = () => {
     <>
       <section className="w-full min-h-screen  py-8" id="about">
         <div className="w-full h-max flex flex-col justify-center items-center  px-6 lg:px-60">
-          <h3 className="text-[#d3b44e] font-semibold text-lg">Introduction</h3>
+          <h3 className="text-[#d3b44e] font-semibold text-lg">About</h3>
           <h1 className="text-slate-700 font-bold text-4xl text-center">
             A commitment to healthier, <br /> brighter smiles
+          </h1>
+          <h1 className="text-slate-400 font-semibold text-md text-center mt-10">
+            The Pewsey Dental Practice was established in 2001 and offers a wide
+            range of dental care all within the NHS, Private and Insurance
+            schemes (Denplan). Our dedicated team of experienced dentists and
+            friendly staff is committed to delivering exceptional care tailored
+            to your unique needs. Pewsey Dental Surgery is more than a dental
+            destination; it’s a cornerstone of your local oral healthcare.
           </h1>
         </div>
         <div className="flex flex-wrap flex-col md:flex-row  px-6 px-6 lg:px-60 py-16 gap-2 gap-y-16 justify-between">

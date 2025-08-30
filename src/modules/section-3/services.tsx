@@ -43,10 +43,10 @@ const ServicesSection = () => {
                 <p className="font-bold text-slate-700 text-xl">4.7</p>
               </div>
               <h1 className="text-2xl font-semibold text-slate-700">
-                Emergency Care
+                Late appointments
               </h1>
               <p className="text-slate-400 font-medium text-md max-w-[75%]">
-                Quick and reliable dental care for unexpected emergencies.
+                We offer suitable late appointments for patients.
               </p>
             </div>
           </div>
@@ -82,11 +82,10 @@ const ServicesSection = () => {
                 <p className="font-bold text-slate-700 text-xl">4.9</p>
               </div>
               <h1 className="text-2xl font-semibold text-slate-700">
-                Cosmetic Enhancements
+                Disabled Access and Parking
               </h1>
               <p className="text-slate-400 font-medium text-md max-w-[75%]">
-                Enhance your smile’s appearance with personalized cosmetic
-                dental treatments.
+                Free disabled parking to make the services more accessible
               </p>
             </div>
           </div>

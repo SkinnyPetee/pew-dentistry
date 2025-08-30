@@ -6,7 +6,10 @@ const Hero = () => {
   return (
     <>
       <Centerer>
-        <section className="w-full min-h-screen flex flex-col lg:flex-row gap-y-10 py">
+        <section
+          className="w-full min-h-screen flex flex-col lg:flex-row gap-y-10 py"
+          id="hero"
+        >
           <div className="flex-1 flex flex-col justify-center items-start gap-4 py-34 pr-8">
             <div>
               <p className="text-slate-400 text-lg font-semibold">
@@ -21,9 +24,14 @@ const Hero = () => {
             </div>
             <div>
               <p className="text-slate-400 text-lg font-semibold">
-                Experience personalized dental care designed to meet your unique
-                needs. From preventive checkups to advanced oral health and
-                confidence are always at their best.
+                We pride ourselves in offering the best dental care possible,
+                whether you are looking for a dentist to look after your teeth,
+                or more complex treatment. Are you nervous or do you suffer from
+                a dental phobia? Then this is your practice. Our ethos is
+                Quality Care for all, Private and Denplan. Teeth whitening and
+                emergency extractions are just a few of the services we offer.
+                If you are uncomfortable or nervous when it comes to the
+                dentist, then we are the practice for you.
               </p>
             </div>
             <div className="flex gap-3">
