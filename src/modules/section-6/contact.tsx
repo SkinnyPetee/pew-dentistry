@@ -16,7 +16,7 @@ const Contact = () => {
             <div className="w-10 h-10 rounded-lg bg-teal-500/10 flex justify-center items-center">
               <MapPin className="text-teal-500" />
             </div>
-            <p className="text-slate-700 font-bold text-2xl">London, UK</p>
+            <p className="text-slate-700 font-bold text-2xl">Pewsey, UK</p>
           </div>
         </div>
 
