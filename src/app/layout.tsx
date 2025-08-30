@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Welcome | Pewsey Dental",
+  title: "Welcome | Pewsey Dental Practice",
   description: "Pewsey Dental clinic in UK.",
 };
 

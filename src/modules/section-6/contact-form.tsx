@@ -21,6 +21,48 @@ export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [statusMessage, setStatusMessage] = useState<string>("");
 
+  // async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  //   e.preventDefault();
+  //   setStatus("idle");
+  //   setStatusMessage("");
+  //   const form = e.currentTarget;
+  //   const formData = new FormData(form);
+  //   const payload: ContactPayload = {
+  //     name: String(formData.get("name") || "").trim(),
+  //     email: String(formData.get("email") || "").trim(),
+  //     phone: String(formData.get("phone") || "").trim(),
+  //     message: String(formData.get("message") || "").trim(),
+  //   };
+
+  //   if (!payload.name || !payload.email || !payload.message) {
+  //     setStatus("error");
+  //     setStatusMessage("Please fill in your name, email, and message.");
+  //     return;
+  //   }
+
+  //   try {
+  //     setLoading(true);
+  //     const res = await fetch("/api/contact", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify(payload),
+  //     });
+  //     if (!res.ok) throw new Error("Failed to submit");
+  //     setStatus("success");
+  //     setStatusMessage(
+  //       "Thanks! We received your message and will respond soon."
+  //     );
+  //     form.reset();
+  //   } catch {
+  //     setStatus("error");
+  //     setStatusMessage(
+  //       "Something went wrong. Please try again or call our office."
+  //     );
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // }
+
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("idle");
@@ -42,22 +84,22 @@ export default function ContactForm() {
 
     try {
       setLoading(true);
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      if (!res.ok) throw new Error("Failed to submit");
-      setStatus("success");
-      setStatusMessage(
-        "Thanks! We received your message and will respond soon."
+
+      // ✅ Build mailto link
+      const subject = encodeURIComponent(`Message from ${payload.name}`);
+      const body = encodeURIComponent(
+        `Name: ${payload.name}\nEmail: ${payload.email}\nPhone: ${payload.phone}\n\n${payload.message}`
       );
+
+      // ✅ Open user’s email client
+      window.location.href = `mailto:your@email.com?subject=${subject}&body=${body}`;
+
+      setStatus("success");
+      setStatusMessage("Your email client has been opened.");
       form.reset();
     } catch {
       setStatus("error");
-      setStatusMessage(
-        "Something went wrong. Please try again or call our office."
-      );
+      setStatusMessage("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -131,7 +173,7 @@ export default function ContactForm() {
             <Button
               type="submit"
               disabled={loading}
-              className="w-full bg-teal-500 text-white hover:bg-blue-600 focus-visible:ring-blue-500"
+              className="w-full bg-teal-500 text-white hover:bg-teal-500/80 focus-visible:ring-teal-500"
             >
               {loading ? "Sending..." : "Submit"}
             </Button>
