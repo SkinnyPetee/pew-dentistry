@@ -92,7 +92,7 @@ export default function ContactForm() {
       );
 
       // ✅ Open user’s email client
-      window.location.href = `mailto:your@email.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:pewseydental@btconnect.com?subject=${subject}&body=${body}`;
 
       setStatus("success");
       setStatusMessage("Your email client has been opened.");
