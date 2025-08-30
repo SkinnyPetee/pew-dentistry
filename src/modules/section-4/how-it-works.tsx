@@ -10,7 +10,7 @@ const HowItWorksSection = () => {
             The process of achieving <br /> dental excellence
           </h1>
         </div>
-        <div className="px-6 px-6 lg:px-60 w-full h-max py-16 gap-16 flex flex-col md:flex-row">
+        <div className="px-6  lg:px-60 w-full h-max py-16 gap-16 flex flex-col md:flex-row">
           <img
             src="/images/how-it-works/how-it-works-img-1.avif"
             alt="how it works image 1"

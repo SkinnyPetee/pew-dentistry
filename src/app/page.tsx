@@ -7,6 +7,7 @@ import HowItWorksSection from "@/modules/section-4/how-it-works";
 import TestimonialSection from "@/modules/section-5/testimonial";
 import Contact from "@/modules/section-6/contact";
 import Footer from "@/modules/footer";
+import SectionTeam from "@/modules/section-team";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <FeaturesSection />
         <SectionVideo />
         <ServicesSection />
+        <SectionTeam />
         <HowItWorksSection />
         <TestimonialSection />
         <Contact />

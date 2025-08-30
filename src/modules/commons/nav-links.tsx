@@ -60,13 +60,18 @@ export default function NavLinks({
         </Link>
       </li>
       <li className="font-semibold">
-        <Link href="#testimonial" onClick={handleClick}>
-          Testimonial
+        <Link href="#team" onClick={handleClick}>
+          Team
         </Link>
       </li>
       <li className="font-semibold">
         <Link href="#how-it-works" onClick={handleClick}>
-          How it works
+          How it Works
+        </Link>
+      </li>
+      <li className="font-semibold">
+        <Link href="#testimonial" onClick={handleClick}>
+          Testimonial
         </Link>
       </li>
     </ul>
