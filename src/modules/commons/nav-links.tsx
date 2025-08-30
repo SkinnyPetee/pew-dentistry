@@ -40,7 +40,7 @@ export default function NavLinks({
 }: NavLinksProps) {
   const base =
     orientation === "horizontal"
-      ? "flex gap-4 items-center"
+      ? "flex gap-8 items-center"
       : "flex flex-col gap-3 py-4";
 
   const handleClick = () => {
@@ -49,27 +49,27 @@ export default function NavLinks({
 
   return (
     <ul className={`${base} ${className ?? ""}`}>
-      <li className="font-semibold">
+      <li className="font-semibold hover:text-[#d3b44e] transition-all duration-300 ease">
         <Link href="#about" onClick={handleClick}>
           About
         </Link>
       </li>
-      <li className="font-semibold">
+      <li className="font-semibold hover:text-[#d3b44e] transition-all duration-300 ease">
         <Link href="#services" onClick={handleClick}>
           Services
         </Link>
       </li>
-      <li className="font-semibold">
+      <li className="font-semibold hover:text-[#d3b44e] transition-all duration-300 ease">
         <Link href="#team" onClick={handleClick}>
           Team
         </Link>
       </li>
-      <li className="font-semibold">
+      <li className="font-semibold hover:text-[#d3b44e] transition-all duration-300 ease">
         <Link href="#how-it-works" onClick={handleClick}>
           How it Works
         </Link>
       </li>
-      <li className="font-semibold">
+      <li className="font-semibold hover:text-[#d3b44e] transition-all duration-300 ease">
         <Link href="#testimonial" onClick={handleClick}>
           Testimonial
         </Link>
