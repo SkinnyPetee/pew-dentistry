@@ -132,7 +132,7 @@ export default function Navbar() {
       </div>
 
       {/* Spacer to offset fixed header */}
-      <div className="h-[80px]" />
+      {/* <div className="h-[80px]" /> */}
     </>
   );
 }
