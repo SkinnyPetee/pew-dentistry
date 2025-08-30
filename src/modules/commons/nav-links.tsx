@@ -74,6 +74,11 @@ export default function NavLinks({
           Testimonial
         </Link>
       </li>
+      <li className="font-semibold hover:text-[#d3b44e] transition-all duration-300 ease">
+        <Link href="#pricing" onClick={handleClick}>
+          Pricing
+        </Link>
+      </li>
     </ul>
   );
 }
