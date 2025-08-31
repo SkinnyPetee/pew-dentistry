@@ -1,10 +1,18 @@
 "use client";
 
 import CustomVideoPlayer from "@/modules/section-2/video-player";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import useIntersectionObserver from "@react-hook/intersection-observer";
 
 const SectionVideo = () => {
   const [mainSrc, setMainSrc] = useState("/videos/dentistry.mp4");
+  const containerRef = useRef<HTMLDivElement>(null!);
+  const lockRef = useRef<boolean>(false);
+  const { isIntersecting } = useIntersectionObserver(containerRef);
+
+  if (isIntersecting) {
+    lockRef.current = true;
+  }
 
   const videos = [
     "/videos/dentistry.mp4",
@@ -15,29 +23,31 @@ const SectionVideo = () => {
   ];
   return (
     <>
-      <section className="w-full min-h-screen  py-8">
-        <div className="w-full lg:px-60 h-full flex flex-col gap-2">
-          <div className="w-full px-2">
-            <CustomVideoPlayer src={mainSrc} autoPlay playHidden={false} />
-          </div>
-          {/* <div className="flex gap-2 justify-between px-2">
+      <section className="w-full min-h-screen  py-8" ref={containerRef}>
+        {lockRef.current && (
+          <div className="w-full lg:px-60 h-full flex flex-col gap-2">
+            <div className="w-full px-2">
+              <CustomVideoPlayer src={mainSrc} autoPlay playHidden={false} />
+            </div>
+            {/* <div className="flex gap-2 justify-between px-2">
             <CustomVideoPlayer />
             <CustomVideoPlayer />
             <CustomVideoPlayer />
             <CustomVideoPlayer />
           </div> */}
-          <div className="flex gap-2 justify-between px-2">
-            {videos.slice(1).map((v, i) => (
-              <div
-                key={i}
-                className="cursor-pointer w-1/4"
-                onClick={() => setMainSrc(v)}
-              >
-                <CustomVideoPlayer src={v} autoPlay={true} playHidden />
-              </div>
-            ))}
+            <div className="flex gap-2 justify-between px-2">
+              {videos.slice(1).map((v, i) => (
+                <div
+                  key={i}
+                  className="cursor-pointer w-1/4"
+                  onClick={() => setMainSrc(v)}
+                >
+                  <CustomVideoPlayer src={v} autoPlay={true} playHidden />
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
         <div className="flex gap-8 px-6 px-6 lg:px-60 my-16 justify-between flex-wrap lg:flex-nowrap">
           <div className="flex flex-col gap-2">
             <p className="text-5xl font-bold text-slate-700">150+</p>
