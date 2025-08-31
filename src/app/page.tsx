@@ -9,6 +9,7 @@ import Contact from "@/modules/section-6/contact";
 import Footer from "@/modules/footer";
 import SectionTeam from "@/modules/section-team";
 import { PricingSection } from "@/modules/section-pricing";
+import ComplaintsSection from "@/modules/section-complaints";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <TestimonialSection />
         <PricingSection />
         <Contact />
+        <ComplaintsSection />
       </main>
       <Footer />
     </>
