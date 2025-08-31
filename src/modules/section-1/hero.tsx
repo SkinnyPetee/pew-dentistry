@@ -10,7 +10,7 @@ const Hero = () => {
           className="w-full min-h-screen flex flex-col-reverse lg:flex-row"
           id="hero"
         >
-          <div className="flex-1 flex flex-col justify-center items-start gap-4 mb-12  pr-8">
+          <div className="flex-1 flex flex-col justify-center items-start gap-4 mb-12 lg:pt-30  pr-8">
             <div>
               <p className="text-slate-400 text-lg font-semibold">
                 <span className="text-[#d3b44e]">Healthy</span> smiles,{" "}
@@ -48,8 +48,8 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="min-h-full flex-1  pt-34 mb-16   flex justify-center">
-            <div className="relative rounded-2xl overflow-hidden w-full aspect-square">
+          <div className="flex-1  pt-34 mb-16   flex  items-end justify-center lg:items-center">
+            <div className="max-w-[450px] max-h-[450px] relative rounded-2xl overflow-hidden w-full aspect-square">
               <Image
                 src="/images/image-1.avif"
                 alt="dentist image"
