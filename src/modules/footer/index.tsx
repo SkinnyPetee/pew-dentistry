@@ -11,7 +11,7 @@ export default function PewseyDentalFooter({ className }: Props) {
         <div className="grid gap-8 md:grid-cols-3">
           <div className="space-y-3">
             <h2 className="text-balance text-xl font-semibold tracking-tight">
-              Pewsey Dental
+              Pewsey Dental Practice
             </h2>
             <p className="text-pretty text-sm text-teal-50/80 leading-6">
               Gentle, modern dentistry in the heart of Pewsey.
@@ -127,7 +127,8 @@ export default function PewseyDentalFooter({ className }: Props) {
 
         <div className="mt-8 border-t border-white/15 pt-6">
           <p className="text-center text-xs text-teal-50/80">
-            © {new Date().getFullYear()} Pewsey Dental. All rights reserved.
+            © {new Date().getFullYear()} Pewsey Dental Practice. All rights
+            reserved.
           </p>
         </div>
       </div>
