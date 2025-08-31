@@ -1,23 +1,3 @@
-// const Footer = () => {
-//   return (
-//     <>
-//       <footer
-//         className="border-t bg-teal-500"
-//         role="contentinfo"
-//         aria-label="Footer"
-//       >
-//         <div className="mx-auto w-full max-w-7xl px-4 py-6 text-center">
-//           <p className="text-sm  text-white font-semibold">
-//             © {new Date().getFullYear()} Pewsey Dental, UK
-//           </p>
-//         </div>
-//       </footer>
-//     </>
-//   );
-// };
-
-// export default Footer;
-
 import { cn } from "@/lib/utils";
 
 type Props = {
@@ -27,59 +7,99 @@ type Props = {
 export default function PewseyDentalFooter({ className }: Props) {
   return (
     <footer className={cn("bg-teal-700 text-white", className)}>
-      <div className="mx-auto w-full px-6 lg:px-30  py-10">
+      <div className="mx-auto w-full  px-6 lg:px-30 py-10">
         <div className="grid gap-8 md:grid-cols-3">
           <div className="space-y-3">
             <h2 className="text-balance text-xl font-semibold tracking-tight">
-              Pewsey Dental Practice
+              Pewsey Dental
             </h2>
             <p className="text-pretty text-sm text-teal-50/80 leading-6">
               Gentle, modern dentistry in the heart of Pewsey.
             </p>
           </div>
 
-          <nav aria-label="Footer" className="md:justify-self-center">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li>
-                <a
-                  href="#about"
-                  className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#testimonial"
-                  className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-                >
-                  Testimonials
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#pricing"
-                  className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-                >
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div className="md:justify-self-center">
+            <nav aria-label="Legal policies">
+              <ul className="flex flex-wrap items-center gap-3">
+                <li>
+                  <a
+                    href="/privacy-policy"
+                    className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/terms-and-conditions"
+                    className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                  >
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/cookie-policy"
+                    className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                  >
+                    Cookie Policy
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav aria-label="Social media" className="mt-4">
+              <ul className="flex flex-wrap items-center gap-3">
+                <li>
+                  <a
+                    href="https://facebook.com/pewseydental"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Pewsey Dental on Facebook"
+                    className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/pewseydental"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Pewsey Dental on X (Twitter)"
+                    className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                  >
+                    X
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://instagram.com/pewseydental"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Pewsey Dental on Instagram"
+                    className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://linkedin.com/company/pewseydental"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Pewsey Dental on LinkedIn"
+                    className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
           <address className="not-italic text-sm text-teal-50/90 md:justify-self-end">
-            <p className="leading-6">
-              Pewsey Dental Practice, 15 North Street, Pewsey, Wiltshire, SN9
-              5ES
-            </p>
+            <p className="leading-6">12 High Street, Pewsey, SN9 5AA</p>
             <p className="mt-1 leading-6">
               Phone:{" "}
               <a
@@ -99,16 +119,15 @@ export default function PewseyDentalFooter({ className }: Props) {
               </a>
             </p>
             <p className="mt-1 leading-6">
-              Mon–Thu: 8:30AM–1:00PM <br /> 2:00PM-5:00PM <br />
-              Fri: 8:30AM-3:30PM
+              Mon–Thu: 8:30AM–1:00PM <br /> 2:00PM-5:00PM <br /> Fri:
+              8:30AM:3:00PM
             </p>
           </address>
         </div>
 
         <div className="mt-8 border-t border-white/15 pt-6">
           <p className="text-center text-xs text-teal-50/80">
-            © {new Date().getFullYear()} Pewsey Dental Practice. All rights
-            reserved.
+            © {new Date().getFullYear()} Pewsey Dental. All rights reserved.
           </p>
         </div>
       </div>
