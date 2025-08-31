@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Centerer from "../commons/centerer";
 
 type PriceItem = {
   name: string;
@@ -146,22 +147,28 @@ export function PricingSection() {
   // Minimal section: grid of category cards only.
   return (
     <>
-      <section className="w-full min-h-screen px-6 lg:px-30">
-        <div
-          id="pricing"
-          className="w-full h-max flex flex-col justify-center items-center  px-6 lg:px-30"
-        >
-          <h3 className="text-[#d3b44e] font-semibold text-lg">Pricing</h3>
-          <h1 className="text-slate-700 font-bold text-4xl text-center">
-            Private Fee Guide
-          </h1>
-        </div>
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 py-16">
-          {categories.map((cat) => (
-            <CategoryCard key={cat.title} title={cat.title} items={cat.items} />
-          ))}
-        </div>
-      </section>
+      <Centerer>
+        <section className="w-full min-h-screen">
+          <div
+            id="pricing"
+            className="w-full h-max flex flex-col justify-center items-center  px-6 lg:px-30"
+          >
+            <h3 className="text-[#d3b44e] font-semibold text-lg">Pricing</h3>
+            <h1 className="text-slate-700 font-bold text-4xl text-center">
+              Private Fee Guide
+            </h1>
+          </div>
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 py-16">
+            {categories.map((cat) => (
+              <CategoryCard
+                key={cat.title}
+                title={cat.title}
+                items={cat.items}
+              />
+            ))}
+          </div>
+        </section>
+      </Centerer>
     </>
   );
 }

@@ -1,104 +1,107 @@
 import { Button } from "@/components/ui/button";
+import Centerer from "../commons/centerer";
 
 const HowItWorksSection = () => {
   return (
     <>
-      <section
-        className="w-full min-h-screen  py-8 px-6 lg:px-30"
-        id="how-it-works"
-      >
-        <div className="w-full h-max flex flex-col justify-center items-center  ">
-          <h3 className="text-[#d3b44e] font-semibold text-lg">How it works</h3>
-          <h1 className="text-slate-700 font-bold text-4xl text-center">
-            The process of achieving <br /> dental excellence
-          </h1>
-        </div>
-        <div className="w-full h-max py-16 gap-16 flex flex-col md:flex-row">
-          <img
-            src="/images/how-it-works/how-it-works-img-1.avif"
-            alt="how it works image 1"
-            className="w-full md:max-w-[50%] aspect-video max-h-[300px] rounded-2xl object-cover"
-          />
-          <div className="flex flex-col gap-3 justify-center">
-            <div className="flex gap-6 items-center">
-              <div className="w-[45px] h-[45px] flex justify-center items-center bg-teal-500 rounded-full text-lg text-white font-bold">
-                01
-              </div>
-              <h2 className="text-shadow-slate-700 font-semibold text-3xl">
-                Schedule your visit
-              </h2>
-            </div>
-            <p className="font-semibold text-slate-400 text-xl">
-              Book an appointment at your convenience through our easy
-              scheduling system, and we’ll ensure a hassle-free experience from
-              the start.
-            </p>
-            <Button
-              size="lg"
-              className="font-bold max-w-max bg-teal-500 hover:bg-teal-500/80 text-white"
-              asChild
-            >
-              <a href="#contact">Contact Us</a>
-            </Button>
+      <Centerer>
+        <section className="w-full min-h-screen  py-8" id="how-it-works">
+          <div className="w-full h-max flex flex-col justify-center items-center  ">
+            <h3 className="text-[#d3b44e] font-semibold text-lg">
+              How it works
+            </h3>
+            <h1 className="text-slate-700 font-bold text-4xl text-center">
+              The process of achieving <br /> dental excellence
+            </h1>
           </div>
-        </div>
-        <div className="w-full h-max py-16 flex gap-16 flex-col-reverse md:flex-row">
-          <div className="flex flex-col gap-3 justify-center">
-            <div className="flex gap-6 items-center">
-              <div className="min-w-[45px] min-h-[45px] flex justify-center items-center bg-teal-500 rounded-full text-lg text-white font-bold">
-                02
+          <div className="w-full h-max py-16 gap-16 flex flex-col md:flex-row">
+            <img
+              src="/images/how-it-works/how-it-works-img-1.avif"
+              alt="how it works image 1"
+              className="w-full md:max-w-[50%] aspect-video max-h-[300px] rounded-2xl object-cover"
+            />
+            <div className="flex flex-col gap-3 justify-center">
+              <div className="flex gap-6 items-center">
+                <div className="w-[45px] h-[45px] flex justify-center items-center bg-teal-500 rounded-full text-lg text-white font-bold">
+                  01
+                </div>
+                <h2 className="text-shadow-slate-700 font-semibold text-3xl">
+                  Schedule your visit
+                </h2>
               </div>
-              <h2 className="text-shadow-slate-700 font-semibold text-3xl">
-                Personalized consultation
-              </h2>
+              <p className="font-semibold text-slate-400 text-xl">
+                Book an appointment at your convenience through our easy
+                scheduling system, and we’ll ensure a hassle-free experience
+                from the start.
+              </p>
+              <Button
+                size="lg"
+                className="font-bold max-w-max bg-teal-500 hover:bg-teal-500/80 text-white"
+                asChild
+              >
+                <a href="#contact">Contact Us</a>
+              </Button>
             </div>
-            <p className="font-semibold text-slate-400 text-xl">
-              Meet with our expert dental team to discuss your needs, goals, and
-              tailored treatment options designed just for you.
-            </p>
-            <Button
-              size="lg"
-              className="bg-teal-500 hover:bg-teal-500/80 text-white font-bold max-w-max"
-              asChild
-            >
-              <a href="#contact">Contact Us</a>
-            </Button>
           </div>
-          <img
-            src="/images/how-it-works/how-it-works-img-2.webp"
-            alt="how it works image 1"
-            className="w-full md:max-w-[50%] aspect-video max-h-[300px] rounded-2xl object-cover"
-          />
-        </div>
-        <div className="w-full h-max py-16 flex gap-16 flex-col md:flex-row">
-          <img
-            src="/images/how-it-works/how-it-works-img-3.avif"
-            alt="how it works image 1"
-            className="w-full md:max-w-[50%] aspect-video max-h-[300px] rounded-2xl object-cover"
-          />
-          <div className="flex flex-col gap-3 justify-center">
-            <div className="flex gap-6 items-center">
-              <div className="w-[45px] h-[45px] flex justify-center items-center bg-teal-500 rounded-full text-lg text-white font-bold">
-                03
+          <div className="w-full h-max py-16 flex gap-16 flex-col-reverse md:flex-row">
+            <div className="flex flex-col gap-3 justify-center">
+              <div className="flex gap-6 items-center">
+                <div className="min-w-[45px] min-h-[45px] flex justify-center items-center bg-teal-500 rounded-full text-lg text-white font-bold">
+                  02
+                </div>
+                <h2 className="text-shadow-slate-700 font-semibold text-3xl">
+                  Personalized consultation
+                </h2>
               </div>
-              <h2 className="text-shadow-slate-700 font-semibold text-3xl">
-                Begin your journey
-              </h2>
+              <p className="font-semibold text-slate-400 text-xl">
+                Meet with our expert dental team to discuss your needs, goals,
+                and tailored treatment options designed just for you.
+              </p>
+              <Button
+                size="lg"
+                className="bg-teal-500 hover:bg-teal-500/80 text-white font-bold max-w-max"
+                asChild
+              >
+                <a href="#contact">Contact Us</a>
+              </Button>
             </div>
-            <p className="font-semibold text-slate-400 text-xl">
-              Medical knowledge and practices continually evolve perfectly match
-              your goals of treatment complications with early intervention.
-            </p>
-            <Button
-              size="lg"
-              className="bg-teal-500 hover:bg-teal-500/80 text-white font-bold max-w-max"
-              asChild
-            >
-              <a href="#contact"> Contact Us</a>
-            </Button>
+            <img
+              src="/images/how-it-works/how-it-works-img-2.webp"
+              alt="how it works image 1"
+              className="w-full md:max-w-[50%] aspect-video max-h-[300px] rounded-2xl object-cover"
+            />
           </div>
-        </div>
-      </section>
+          <div className="w-full h-max py-16 flex gap-16 flex-col md:flex-row">
+            <img
+              src="/images/how-it-works/how-it-works-img-3.avif"
+              alt="how it works image 1"
+              className="w-full md:max-w-[50%] aspect-video max-h-[300px] rounded-2xl object-cover"
+            />
+            <div className="flex flex-col gap-3 justify-center">
+              <div className="flex gap-6 items-center">
+                <div className="w-[45px] h-[45px] flex justify-center items-center bg-teal-500 rounded-full text-lg text-white font-bold">
+                  03
+                </div>
+                <h2 className="text-shadow-slate-700 font-semibold text-3xl">
+                  Begin your journey
+                </h2>
+              </div>
+              <p className="font-semibold text-slate-400 text-xl">
+                Medical knowledge and practices continually evolve perfectly
+                match your goals of treatment complications with early
+                intervention.
+              </p>
+              <Button
+                size="lg"
+                className="bg-teal-500 hover:bg-teal-500/80 text-white font-bold max-w-max"
+                asChild
+              >
+                <a href="#contact"> Contact Us</a>
+              </Button>
+            </div>
+          </div>
+        </section>
+      </Centerer>
     </>
   );
 };

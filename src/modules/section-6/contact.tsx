@@ -7,9 +7,9 @@ const Contact = () => {
     <>
       <section
         id="contact"
-        className="flex-col lg:flex-row  w-full min-h-screen flex h-max lg:h-screen bg-teal-500/10  px-6 lg:px-30"
+        className="flex-col lg:flex-row  w-full min-h-screen flex h-max lg:h-screen bg-teal-500/10  px-6 lg:px-60"
       >
-        <div className="w-full h-max lg:h-screen py-6 lg:py-20 flex flex-col justify-center gap-4">
+        <div className="w-full h-max lg:h-screen py-6  flex flex-col justify-center items-center lg:items-start py-16 gap-4">
           <h2 className="text-2xl font-bold">
             Talk to us about your <br /> dental concerns
           </h2>
@@ -18,12 +18,9 @@ const Contact = () => {
               <MapPin className="text-teal-500" />
             </div>
             <p className="text-slate-600 font-medium text-md">
-              Pewsey Dental Practice, 15 North Street, Pewsey, Wiltshire, SN9
-              5ES <br /> Tel: 01672 563622 <br /> E-Mail:
+              Pewsey Dental Practice, 15 North Street, <br /> Pewsey, Wiltshire,
+              SN9 5ES <br /> Tel: 01672 563622 <br /> E-Mail:
               pewseydental@btconnect.com
-              <br />
-              Mon–Thu: 8:30AM–1:00PM <br /> 2:00PM-5:00PM <br /> Fri:
-              8:30AM:3:00PM
               <br />
               <Button
                 className="bg-teal-500 hover:bg-teal-500/10 text-white mt-6"

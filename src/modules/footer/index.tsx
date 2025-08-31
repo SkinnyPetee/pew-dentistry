@@ -8,47 +8,15 @@ type Props = {
 export default function PewseyDentalFooter({ className }: Props) {
   return (
     <footer className={cn("bg-teal-700 text-white", className)}>
-      <div className="mx-auto w-full  px-6 lg:px-30 py-10">
+      <div className="mx-auto w-full  px-6 lg:px-60 py-10">
         <div className="grid gap-8 md:grid-cols-2">
           <div className="space-y-3">
             <h2 className="text-balance text-xl font-semibold tracking-tight">
               Pewsey Dental Practice
             </h2>
-            <p className="text-pretty text-sm text-teal-50/80 leading-6">
+            {/* <p className="text-pretty text-sm text-teal-50/80 leading-6">
               Gentle, modern dentistry in the heart of Pewsey.
-            </p>
-          </div>
-
-          <div className="md:justify-self-end">
-            <nav aria-label="Legal policies">
-              <ul className="flex flex-col md:flex-row flex-no-wrap items-start gap-3">
-                <li>
-                  <a
-                    href="/privacy-policy"
-                    className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/terms-and-conditions"
-                    className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-                  >
-                    Terms & Conditions
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/cookie-policy"
-                    className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-                  >
-                    Cookie Policy
-                  </a>
-                </li>
-              </ul>
-            </nav>
-
+            </p> */}
             <nav aria-label="Social media" className="mt-4">
               <ul className="flex flex-wrap items-center gap-3">
                 <li>
@@ -93,6 +61,31 @@ export default function PewseyDentalFooter({ className }: Props) {
                     className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                   >
                     <Linkedin />
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div className="md:justify-self-end">
+            <nav aria-label="Legal policies">
+              <ul className="flex flex-col flex-no-wrap items-start gap-3">
+                <li>
+                  <a
+                    href="/privacy-policy"
+                    target="_blank"
+                    className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/t&c"
+                    target="_blank"
+                    className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                  >
+                    Terms & Conditions
                   </a>
                 </li>
               </ul>
