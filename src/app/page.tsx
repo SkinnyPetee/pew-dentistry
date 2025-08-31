@@ -10,10 +10,12 @@ import Footer from "@/modules/footer";
 import SectionTeam from "@/modules/section-team";
 import { PricingSection } from "@/modules/section-pricing";
 import ComplaintsSection from "@/modules/section-complaints";
+import Noti from "@/modules/commons/noti";
 
 export default function Home() {
   return (
     <>
+      <Noti />
       <Navbar />
       <main>
         <Hero />

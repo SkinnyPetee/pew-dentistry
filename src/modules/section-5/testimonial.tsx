@@ -10,10 +10,10 @@ const TestimonialSection = () => {
               Testimonial
             </h3>
             <h1 className="text-slate-700 font-bold text-4xl text-center">
-              What our patients say about <br /> us & service!!
+              What our customers say about <br /> Us & Service!!
             </h1>
           </div>
-          <div className="w-full flex justify-between py-16 gap-4 flex-wrap">
+          {/* <div className="w-full flex justify-between py-16 gap-4 flex-wrap">
             <div className="h-[600px]  bg-teal-500/10 text-white w-full md:max-w-[45%] border-muted-foreground/10 border-[1px] overflow-hidden rounded-xl">
               <img
                 src="/images/testimonial/testimonial-img-1.avif"
@@ -42,6 +42,15 @@ const TestimonialSection = () => {
                 ~Lisa Green
               </p>
             </div>
+          </div> */}
+
+          <div>
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+
+            <div
+              className="elfsight-app-b4c3d2cd-95cd-4374-bba0-706752634271"
+              data-elfsight-app-lazy
+            ></div>
           </div>
         </section>
       </Centerer>

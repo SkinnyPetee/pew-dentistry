@@ -7,7 +7,7 @@ const SectionTeam = () => {
         <section className="w-full min-h-screen  py-8" id="team">
           <div className="w-full h-max flex flex-col justify-center items-center  px-6 lg:px-60">
             <h3 className="text-[#d3b44e] font-semibold text-lg">Our Team</h3>
-            <h1 className="text-slate-700 font-bold text-4xl text-center">
+            <h1 className="text-slate-700 font-bold text-4xl text-center w-full lg:w-[600px]">
               Professionals committed <br /> to exceptional care
             </h1>
           </div>

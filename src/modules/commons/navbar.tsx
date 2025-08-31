@@ -38,7 +38,6 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Logo from "./logo";
 import NavLinks from "./nav-links";
-import Centerer from "./centerer";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -55,7 +54,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="bg-white/30 backdrop-blur-md w-full flex justify-between items-center h-[80px] fixed top-0 z-40 px-6 lg:px-60">
+      <header className="bg-white/30 backdrop-blur-md w-full flex justify-between items-center h-[80px] fixed top-[40px] z-40 px-6 lg:px-60">
         <div className="flex items-center">
           <Logo />
         </div>
@@ -86,7 +85,11 @@ export default function Navbar() {
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {open ? (
+              <X className="h-5 w-5 text-black" />
+            ) : (
+              <Menu className="h-5 w-5 text-black" />
+            )}
           </Button>
         </div>
       </header>

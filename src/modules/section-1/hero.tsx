@@ -12,7 +12,7 @@ const Hero = () => {
         >
           <div className="flex-1 flex flex-col justify-center items-start gap-4 mb-12 lg:pt-30  pr-8">
             <div>
-              <p className="text-slate-400 text-lg font-semibold">
+              <p className="text-teal-400 text-lg font-semibold">
                 <span className="text-[#d3b44e]">Healthy</span> smiles,{" "}
                 <span className="text-[#d3b44e]">happy</span> lives.
               </p>

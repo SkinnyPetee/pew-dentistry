@@ -11,16 +11,16 @@ const Contact = () => {
       >
         <div className="w-full h-max lg:h-screen py-6  flex flex-col justify-center items-center lg:items-start py-16 gap-4">
           <h2 className="text-2xl font-bold">
-            Talk to us about your <br /> dental concerns
+            Talk to us about your dental concerns
           </h2>
           <div className="flex gap-3">
             <div className="min-w-10 h-10 rounded-lg bg-teal-500/10 flex justify-center items-center">
               <MapPin className="text-teal-500" />
             </div>
             <p className="text-slate-600 font-medium text-md">
-              Pewsey Dental Practice, 15 North Street, <br /> Pewsey, Wiltshire,
-              SN9 5ES <br /> Tel: 01672 563622 <br /> E-Mail:
-              pewseydental@btconnect.com
+              <span className="font-bold"> Pewsey Dental Practice</span>, <br />{" "}
+              15 North Street, <br /> Pewsey, Wiltshire, SN9 5ES <br /> Tel:
+              01672 563622 <br /> E-Mail: pewseydental@btconnect.com
               <br />
               <Button
                 className="bg-teal-500 hover:bg-teal-500/10 text-white mt-6"
