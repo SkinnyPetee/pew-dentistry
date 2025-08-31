@@ -6,10 +6,10 @@ const Hero = () => {
   return (
     <>
       <section
-        className="w-full min-h-screen flex flex-col-reverse lg:flex-row gap-y-10 py px-6 lg:px-30"
+        className="w-full min-h-screen flex flex-col-reverse lg:flex-row   px-6 lg:px-30"
         id="hero"
       >
-        <div className="flex-1 flex flex-col justify-center items-start gap-4 py-34 pr-8">
+        <div className="flex-1 flex flex-col justify-center items-start gap-4 mb-12  pr-8">
           <div>
             <p className="text-slate-400 text-lg font-semibold">
               <span className="text-[#d3b44e]">Healthy</span> smiles,{" "}
@@ -47,7 +47,7 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className="min-h-full flex-1  pt-30 md:py-34   flex justify-center">
+        <div className="min-h-full flex-1  pt-34 mb-16   flex justify-center">
           <div className="relative rounded-2xl overflow-hidden w-full aspect-square">
             <Image
               src="/images/image-1.avif"

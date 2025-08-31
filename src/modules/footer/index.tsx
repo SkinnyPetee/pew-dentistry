@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 type Props = {
   className?: string;
@@ -8,7 +9,7 @@ export default function PewseyDentalFooter({ className }: Props) {
   return (
     <footer className={cn("bg-teal-700 text-white", className)}>
       <div className="mx-auto w-full  px-6 lg:px-30 py-10">
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2">
           <div className="space-y-3">
             <h2 className="text-balance text-xl font-semibold tracking-tight">
               Pewsey Dental Practice
@@ -18,9 +19,9 @@ export default function PewseyDentalFooter({ className }: Props) {
             </p>
           </div>
 
-          <div className="md:justify-self-center">
+          <div className="md:justify-self-end">
             <nav aria-label="Legal policies">
-              <ul className="flex flex-wrap items-center gap-3">
+              <ul className="flex flex-col md:flex-row flex-no-wrap items-start gap-3">
                 <li>
                   <a
                     href="/privacy-policy"
@@ -58,7 +59,7 @@ export default function PewseyDentalFooter({ className }: Props) {
                     aria-label="Pewsey Dental on Facebook"
                     className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                   >
-                    Facebook
+                    <Facebook />
                   </a>
                 </li>
                 <li>
@@ -69,7 +70,7 @@ export default function PewseyDentalFooter({ className }: Props) {
                     aria-label="Pewsey Dental on X (Twitter)"
                     className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                   >
-                    X
+                    <Twitter />
                   </a>
                 </li>
                 <li>
@@ -80,7 +81,7 @@ export default function PewseyDentalFooter({ className }: Props) {
                     aria-label="Pewsey Dental on Instagram"
                     className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                   >
-                    Instagram
+                    <Instagram />
                   </a>
                 </li>
                 <li>
@@ -91,14 +92,14 @@ export default function PewseyDentalFooter({ className }: Props) {
                     aria-label="Pewsey Dental on LinkedIn"
                     className="rounded px-1 text-sm text-white/90 underline-offset-4 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                   >
-                    LinkedIn
+                    <Linkedin />
                   </a>
                 </li>
               </ul>
             </nav>
           </div>
 
-          <address className="not-italic text-sm text-teal-50/90 md:justify-self-end">
+          {/* <address className="not-italic text-sm text-teal-50/90 md:justify-self-end">
             <p className="leading-6">12 High Street, Pewsey, SN9 5AA</p>
             <p className="mt-1 leading-6">
               Phone:{" "}
@@ -118,11 +119,7 @@ export default function PewseyDentalFooter({ className }: Props) {
                 pewseydental@btconnect.com
               </a>
             </p>
-            <p className="mt-1 leading-6">
-              Mon–Thu: 8:30AM–1:00PM <br /> 2:00PM-5:00PM <br /> Fri:
-              8:30AM:3:00PM
-            </p>
-          </address>
+          </address> */}
         </div>
 
         <div className="mt-8 border-t border-white/15 pt-6">

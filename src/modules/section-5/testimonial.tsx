@@ -12,7 +12,7 @@ const TestimonialSection = () => {
           </h1>
         </div>
         <div className="w-full flex justify-between py-16 gap-4 flex-wrap">
-          <div className="h-[600px] w-full md:max-w-[45%] border-muted-foreground/10 border-[1px] overflow-hidden rounded-xl">
+          <div className="h-[600px]  bg-teal-500/10 text-white w-full md:max-w-[45%] border-muted-foreground/10 border-[1px] overflow-hidden rounded-xl">
             <img
               src="/images/testimonial/testimonial-img-1.avif"
               alt="testimonial image"
@@ -26,7 +26,7 @@ const TestimonialSection = () => {
               ~Daniel Smith
             </p>
           </div>
-          <div className="h-[600px] w-full md:max-w-[45%] border-muted-foreground/10 border-[1px] overflow-hidden rounded-xl">
+          <div className="h-[600px] bg-teal-500/10 text-white w-full md:max-w-[45%] border-muted-foreground/10 border-[1px] overflow-hidden rounded-xl">
             <img
               src="/images/testimonial/testimonial-img-2.avif"
               alt="testimonial image"

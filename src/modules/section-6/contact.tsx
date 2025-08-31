@@ -22,6 +22,9 @@ const Contact = () => {
               5ES <br /> Tel: 01672 563622 <br /> E-Mail:
               pewseydental@btconnect.com
               <br />
+              Mon–Thu: 8:30AM–1:00PM <br /> 2:00PM-5:00PM <br /> Fri:
+              8:30AM:3:00PM
+              <br />
               <Button
                 className="bg-teal-500 hover:bg-teal-500/10 text-white mt-6"
                 asChild
