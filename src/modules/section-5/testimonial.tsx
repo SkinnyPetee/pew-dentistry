@@ -1,4 +1,5 @@
 import Centerer from "../commons/centerer";
+import Script from "next/script";
 
 const TestimonialSection = () => {
   return (
@@ -45,7 +46,7 @@ const TestimonialSection = () => {
           </div> */}
 
           <div>
-            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <Script src="https://elfsightcdn.com/platform.js" async />
 
             <div
               className="elfsight-app-b4c3d2cd-95cd-4374-bba0-706752634271"
