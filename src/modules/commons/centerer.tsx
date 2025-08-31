@@ -1,7 +1,9 @@
 const Centerer = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <div className="w-full px-6 px-6 lg:px-60 relative">{children}</div>
+      <div className="w-full px-6  lg:px-20 relative flex justify-center">
+        {children}
+      </div>
     </>
   );
 };

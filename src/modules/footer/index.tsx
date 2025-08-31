@@ -27,7 +27,7 @@ type Props = {
 export default function PewseyDentalFooter({ className }: Props) {
   return (
     <footer className={cn("bg-teal-700 text-white", className)}>
-      <div className="mx-auto w-full max-w-xl px-4 py-10">
+      <div className="mx-auto w-full px-6 lg:px-30  py-10">
         <div className="grid gap-8 md:grid-cols-3">
           <div className="space-y-3">
             <h2 className="text-balance text-xl font-semibold tracking-tight">

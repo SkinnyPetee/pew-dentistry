@@ -1,14 +1,17 @@
 const TestimonialSection = () => {
   return (
     <>
-      <section className="w-full min-h-screen  py-8" id="testimonial">
-        <div className="w-full h-max flex flex-col justify-center items-center  px-6 lg:px-60">
+      <section
+        className="w-full min-h-screen  py-8 px-6 lg:px-30 "
+        id="testimonial"
+      >
+        <div className="w-full h-max flex flex-col justify-center items-center">
           <h3 className="text-[#d3b44e] font-semibold text-lg">Testimonial</h3>
           <h1 className="text-slate-700 font-bold text-4xl text-center">
             What our patients say about <br /> us & service!!
           </h1>
         </div>
-        <div className="w-full px-6 lg:px-60 flex justify-between py-16 gap-4 flex-wrap">
+        <div className="w-full flex justify-between py-16 gap-4 flex-wrap">
           <div className="h-[600px] w-full md:max-w-[45%] border-muted-foreground/10 border-[1px] overflow-hidden rounded-xl">
             <img
               src="/images/testimonial/testimonial-img-1.avif"

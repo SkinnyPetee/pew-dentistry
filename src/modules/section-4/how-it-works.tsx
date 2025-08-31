@@ -3,14 +3,17 @@ import { Button } from "@/components/ui/button";
 const HowItWorksSection = () => {
   return (
     <>
-      <section className="w-full min-h-screen  py-8" id="how-it-works">
-        <div className="w-full h-max flex flex-col justify-center items-center  px-6 px-6 lg:px-60">
+      <section
+        className="w-full min-h-screen  py-8 px-6 lg:px-30"
+        id="how-it-works"
+      >
+        <div className="w-full h-max flex flex-col justify-center items-center  ">
           <h3 className="text-[#d3b44e] font-semibold text-lg">How it works</h3>
           <h1 className="text-slate-700 font-bold text-4xl text-center">
             The process of achieving <br /> dental excellence
           </h1>
         </div>
-        <div className="px-6  lg:px-60 w-full h-max py-16 gap-16 flex flex-col md:flex-row">
+        <div className="w-full h-max py-16 gap-16 flex flex-col md:flex-row">
           <img
             src="/images/how-it-works/how-it-works-img-1.avif"
             alt="how it works image 1"
@@ -39,7 +42,7 @@ const HowItWorksSection = () => {
             </Button>
           </div>
         </div>
-        <div className="px-6 px-6 lg:px-60 w-full h-max py-16 flex gap-16 flex-col md:flex-row">
+        <div className="w-full h-max py-16 flex gap-16 flex-col-reverse md:flex-row">
           <div className="flex flex-col gap-3 justify-center">
             <div className="flex gap-6 items-center">
               <div className="min-w-[45px] min-h-[45px] flex justify-center items-center bg-teal-500 rounded-full text-lg text-white font-bold">
@@ -67,7 +70,7 @@ const HowItWorksSection = () => {
             className="w-full md:max-w-[50%] aspect-video max-h-[300px] rounded-2xl object-cover"
           />
         </div>
-        <div className="px-6 px-6 lg:px-60 w-full h-max py-16 flex gap-16 flex-col md:flex-row">
+        <div className="w-full h-max py-16 flex gap-16 flex-col md:flex-row">
           <img
             src="/images/how-it-works/how-it-works-img-3.avif"
             alt="how it works image 1"

@@ -38,6 +38,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Logo from "./logo";
 import NavLinks from "./nav-links";
+import Centerer from "./centerer";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -54,7 +55,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="bg-white/30 backdrop-blur-md w-full px-6 lg:px-60 flex justify-between items-center h-[80px] fixed top-0 z-40">
+      <header className="bg-white/30 backdrop-blur-md w-full flex justify-between items-center h-[80px] fixed top-0 z-40 px-6 lg:px-30">
         <div className="flex items-center">
           <Logo />
         </div>

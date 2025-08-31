@@ -7,7 +7,7 @@ const Contact = () => {
     <>
       <section
         id="contact"
-        className="flex-col lg:flex-row  w-full min-h-screen flex h-max lg:h-screen bg-teal-500/10  px-6 lg:px-60"
+        className="flex-col lg:flex-row  w-full min-h-screen flex h-max lg:h-screen bg-teal-500/10  px-6 lg:px-30"
       >
         <div className="w-full h-max lg:h-screen py-6 lg:py-20 flex flex-col justify-center gap-4">
           <h2 className="text-2xl font-bold">
